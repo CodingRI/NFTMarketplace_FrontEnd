@@ -1,7 +1,7 @@
-import { useClient } from 'next/client';
+// import { useClient } from 'next/client';
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "../../Components/Component_index";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,10 +11,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useClient();
+  // useClient();
   return (
     <html lang="en">
-      <Navbar/>
+      
       <body className={inter.className}>{children}</body>
     </html>
   );
